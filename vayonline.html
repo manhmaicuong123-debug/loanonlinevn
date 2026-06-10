@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LoanOnlineVN - So sánh giải pháp tài chính trực tuyến</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:'Be Vietnam Pro',sans-serif;
+background:#0a0a0a;
+color:#fff;
+line-height:1.6
+}
+.container{
+width:92%;
+max-width:1200px;
+margin:auto
+}
+.bg{
+position:fixed;
+inset:0;
+z-index:-1;
+background:
+radial-gradient(circle at top left,#ff450020,transparent 35%),
+radial-gradient(circle at bottom right,#ff980020,transparent 35%),
+linear-gradient(135deg,#050505,#111,#181818)
+}
+.navbar{
+position:sticky;
+top:0;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(12px);
+border-bottom:1px solid #ffffff15;
+z-index:100
+}
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0
+}
+.logo{
+font-size:28px;
+font-weight:800;
+background:linear-gradient(90deg,#ff3d00,#ff9800);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent
+}
+.menu{
+display:flex;
+gap:25px
+}
+.menu a{
+text-decoration:none;
+color:#ddd
+}
+.menu a:hover{
+color:#ff9800
+}
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center
+}
+.hero h1{
+font-size:64px;
+margin-bottom:20px
+}
+.hero span{
+background:linear-gradient(90deg,#ff5722,#ff9800);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent
+}
+.hero p{
+max-width:800px;
+margin:auto;
+color:#cbd5e1;
+margin-bottom:35px
+}
+.btn{
+display:inline-block;
+padding:14px 28px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+transition:.3s
+}
+.btn-main{
+background:linear-gradient(90deg,#ff5722,#ff9800);
+color:#fff
+}
+.btn-outline{
+border:1px solid #ffffff20;
+color:#fff
+}
+.btn:hover{
+transform:translateY(-3px)
+}
+.section{
+padding:90px 0
+}
+.title{
+text-align:center;
+margin-bottom:50px
+}
+.title h2{
+font-size:42px;
+margin-bottom:15px
+}
+.title p{
+max-width:700px;
+margin:auto;
+color:#cbd5e1
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px
+}
+.card{
+background:#ffffff08;
+border:1px solid #ffffff12;
+padding:28px;
+border-radius:22px;
+transition:.3s
+}
+.card:hover{
+transform:translateY(-5px);
+border-color:#ff9800
+}
+.card h3{
+margin-bottom:15px
+}
+.card p{
+color:#cbd5e1
+}
+.offers{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px
+}
+.offer{
+background:#ffffff08;
+border:1px solid #ffffff12;
+padding:30px;
+border-radius:25px
+}
+.offer:hover{
+border-color:#ff9800
+}
+.tag{
+display:inline-block;
+padding:8px 14px;
+border-radius:999px;
+background:#ff9800;
+color:#000;
+font-size:12px;
+font-weight:700;
+margin-bottom:18px
+}
+.offer h3{
+font-size:28px;
+margin-bottom:15px
+}
+.offer p{
+color:#cbd5e1;
+margin-bottom:15px
+}
+.offer ul{
+list-style:none;
+margin-bottom:20px
+}
+.offer li{
+margin-bottom:10px
+}
+.offer a{
+display:block;
+text-align:center;
+padding:14px;
+background:linear-gradient(90deg,#ff5722,#ff9800);
+border-radius:12px;
+text-decoration:none;
+color:#fff;
+font-weight:700
+}
+.faq{
+max-width:900px;
+margin:auto
+}
+.faq-item{
+background:#ffffff08;
+border:1px solid #ffffff12;
+padding:20px;
+border-radius:18px;
+margin-bottom:15px
+}
+.faq-item h4{
+margin-bottom:10px
+}
+.cta{
+text-align:center;
+padding:70px 30px;
+background:#ffffff08;
+border-radius:30px;
+border:1px solid #ffffff12
+}
+.footer{
+text-align:center;
+padding:40px 20px;
+border-top:1px solid #ffffff10;
+color:#aaa
+}
+@media(max-width:768px){
+.hero h1{font-size:42px}
+.menu{display:none}
+.title h2{font-size:32px}
+}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+
+<nav class="navbar">
+<div class="container nav">
+<div class="logo">LoanOnlineVN</div>
+<div class="menu">
+<a href="#about">Giới thiệu</a>
+<a href="#offers">Đối tác</a>
+<a href="#faq">FAQ</a>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<h1>So sánh các <span>giải pháp tài chính</span> trực tuyến</h1>
+<p>
+LoanOnlineVN tổng hợp và giới thiệu các nền tảng tài chính trực tuyến phổ biến,
+giúp người dùng dễ dàng tìm hiểu thông tin và lựa chọn giải pháp phù hợp.
+</p>
+<a href="#offers" class="btn btn-main">Khám phá ngay</a>
+<a href="#about" class="btn btn-outline">Tìm hiểu thêm</a>
+</div>
+</section>
+
+<section class="section" id="about">
+<div class="container">
+<div class="title">
+<h2>Tại sao chọn LoanOnlineVN?</h2>
+<p>Thông tin rõ ràng, giao diện hiện đại và tối ưu cho mọi thiết bị.</p>
+</div>
+
+<div class="grid">
+<div class="card">
+<h3>⚡ So sánh nhanh</h3>
+<p>Dễ dàng xem nhiều nền tảng tài chính trên cùng một website.</p>
+</div>
+
+<div class="card">
+<h3>📱 Responsive</h3>
+<p>Hoạt động tốt trên Android, iPhone, Tablet và máy tính.</p>
+</div>
+
+<div class="card">
+<h3>🔍 Thông tin rõ ràng</h3>
+<p>Trình bày trực quan giúp người dùng dễ tìm kiếm thông tin.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Tốc độ cao</h3>
+<p>Tối ưu hiệu suất giúp tải trang nhanh và ổn định.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="offers">
+<div class="container">
+
+<div class="title">
+<h2>Đối tác nổi bật</h2>
+<p>Các nền tảng tài chính trực tuyến phổ biến tại Việt Nam.</p>
+</div>
+
+<div class="offers">
+
+<div class="offer">
+<div class="tag">HOT</div>
+<h3>CashOnline</h3>
+<p>Nền tảng kết nối người dùng với các đối tác tài chính.</p>
+<ul>
+<li>✔ Đăng ký trực tuyến</li>
+<li>✔ Thao tác đơn giản</li>
+<li>✔ Hỗ trợ trên điện thoại</li>
+</ul>
+<a href="#">Đăng ký ngay</a>
+</div>
+
+<div class="offer">
+<div class="tag">HOT</div>
+<h3>Mazilla</h3>
+<p>Hệ thống hỗ trợ tìm kiếm giải pháp tài chính phù hợp.</p>
+<ul>
+<li>✔ Nhiều đối tác</li>
+<li>✔ Hồ sơ trực tuyến</li>
+<li>✔ Quy trình đơn giản</li>
+</ul>
+<a href="#">Đăng ký ngay</a>
+</div>
+
+<div class="offer">
+<div class="tag">HOT</div>
+<h3>Credilo</h3>
+<p>Nền tảng so sánh nhiều lựa chọn tài chính khác nhau.</p>
+<ul>
+<li>✔ Giao diện thân thiện</li>
+<li>✔ Hỗ trợ online</li>
+<li>✔ Đăng ký nhanh</li>
+</ul>
+<a href="#">Đăng ký ngay</a>
+</div>
+
+<div class="offer">
+<div class="tag">HOT</div>
+<h3>Credy</h3>
+<p>Giải pháp kết nối người dùng với các đơn vị tài chính.</p>
+<ul>
+<li>✔ Nhiều lựa chọn</li>
+<li>✔ Hệ thống tự động</li>
+<li>✔ Thao tác dễ dàng</li>
+</ul>
+<a href="#">Đăng ký ngay</a>
+</div>
+
+<div class="offer">
+<div class="tag">NỔI BẬT</div>
+<h3>Finami</h3>
+<p>Giới thiệu các giải pháp tài chính trực tuyến phù hợp.</p>
+<ul>
+<li>✔ Quy trình online</li>
+<li>✔ Dễ tiếp cận</li>
+<li>✔ Hỗ trợ nhiều thiết bị</li>
+</ul>
+<a href="#">Đăng ký ngay</a>
+</div>
+
+<div class="offer">
+<div class="tag">NỔI BẬT</div>
+<h3>Finloo</h3>
+<p>Tổng hợp nhiều đối tác tài chính trong một nền tảng.</p>
+<ul>
+<li>✔ Truy cập nhanh</li>
+<li>✔ Đăng ký trực tuyến</li>
+<li>✔ Hoạt động 24/7</li>
+</ul>
+<a href="#">Đăng ký ngay</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="faq">
+<div class="container">
+
+<div class="title">
+<h2>Câu hỏi thường gặp</h2>
+</div>
+
+<div class="faq">
+
+<div class="faq-item">
+<h4>LoanOnlineVN là gì?</h4>
+<p>Website tổng hợp thông tin và giới thiệu các nền tảng tài chính trực tuyến.</p>
+</div>
+
+<div class="faq-item">
+<h4>Tôi có thể đăng ký trên điện thoại không?</h4>
+<p>Có, website được tối ưu cho mọi thiết bị di động.</p>
+</div>
+
+<div class="faq-item">
+<h4>Website có thu phí không?</h4>
+<p>Người dùng có thể truy cập và tìm hiểu thông tin miễn phí.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="cta">
+<h2>Bắt đầu ngay hôm nay</h2>
+<p>
+Khám phá các giải pháp tài chính trực tuyến phù hợp với nhu cầu của bạn.
+</p>
+<a href="#offers" class="btn btn-main">Xem đối tác</a>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+© 2026 LoanOnlineVN
+<br><br>
+Website tổng hợp thông tin về các nền tảng tài chính trực tuyến tại Việt Nam.
+</footer>
+
+</body>
+</html>
